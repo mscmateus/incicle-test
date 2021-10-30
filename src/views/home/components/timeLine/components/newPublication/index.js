@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, TextArea, PublicationButton, ArticleSection, TextAreaContainer } from './style'
-import { GrGallery } from 'react-icons/gr'
+import { IoImagesOutline } from 'react-icons/io5'
 import { VscDeviceCameraVideo } from 'react-icons/vsc'
 import { BsCardText } from 'react-icons/bs'
 
@@ -12,7 +12,7 @@ export default function NewPublication() {
                     <BsCardText />
                     <TextArea rows={1} draggable={false} placeholder={'Escreva uma publicação...'} />
                     <PublicationButton>
-                        <GrGallery />
+                        <IoImagesOutline />
                     </PublicationButton>
                     <PublicationButton>
                         <VscDeviceCameraVideo />

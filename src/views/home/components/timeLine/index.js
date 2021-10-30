@@ -8,7 +8,12 @@ export default function TimeLine() {
     return (
         <Container>
             <NewPublication />
-            <Publication />
+            <Publication 
+                content='Essa publicação está configurada no modo privado "somente eu".'
+            />
+            <Publication 
+                content="ikikikiki"
+            />
         </Container>
     )
 }

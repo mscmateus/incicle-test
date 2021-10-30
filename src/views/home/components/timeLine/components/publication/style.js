@@ -45,6 +45,7 @@ export const PubliInfo = styled.div`
 `
 export const Content = styled.div`
     p{
+        font-size: 13px;
         color: #585556; 
     }
 `
@@ -78,11 +79,23 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     border: 0px;
-    background-color: unset;
     border-radius: 20px;
     padding: 5px;
     background-color: #eaebedff;
+    font-size: 12px;
+    cursor: pointer;
     &:hover{
         background-color: #58555680;
     }
+`
+
+export const Active = styled.p`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0b5f93;
 `

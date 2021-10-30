@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Section, Ocupation, BackGroundPicture, ProfilePicture, ProfilePictureContainer, Identification, UserInfos } from './style'
-import { GrLocation } from "react-icons/gr";
+import { TiLocationOutline } from "react-icons/ti";
 import { FaUniversity } from "react-icons/fa";
 import { MdCorporateFare } from "react-icons/md";
 
@@ -18,9 +18,10 @@ export default function ProfileCard() {
                     <h3>Front-end Developer</h3>
                 </Identification>
                 <UserInfos>
-                    <p><GrLocation/>Rio Branco/Acre - Brasil</p>
+                    <p><TiLocationOutline style={{color: '#87c3e1ff', marginRight: 5}}/>Rio Branco/Acre - Brasil</p>
                     <Ocupation>
-                        <p><MdCorporateFare/>InCicle</p><p style={{marginLeft:'40px'}}><FaUniversity/>Uninorte</p>
+                        <p><MdCorporateFare style={{marginRight: 5}}/>InCicle</p>
+                        <p style={{marginLeft:'40px'}}><FaUniversity style={{ marginRight: 5}}/>Uninorte</p>
                     </Ocupation>
                 </UserInfos>
             </Section>

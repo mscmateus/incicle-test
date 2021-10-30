@@ -41,8 +41,12 @@ export const PublicationButton = styled.button`
     background-color: unset;
     border-radius: 10px;
     padding: 10px;
+    color: '#b8b8b8ff';
+    font-size: 20px;
+    cursor: pointer;
     &:hover{
-        background-color: #58555680
+        background-color: #58555680;
+        color: #fff;
     }
 `
 export const ArticleSection = styled.div`
