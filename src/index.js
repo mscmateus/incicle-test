@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { App } from './style'
+import Home from './views/home'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <Home />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
