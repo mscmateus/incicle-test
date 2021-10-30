@@ -18,7 +18,7 @@ export default function ProfileCard() {
                     <h3>Front-end Developer</h3>
                 </Identification>
                 <UserInfos>
-                    <p><GrLocation style={{color: '#88c7e5ff'}}/>Rio Branco/Acre - Brasil</p>
+                    <p><GrLocation/>Rio Branco/Acre - Brasil</p>
                     <Ocupation>
                         <p><MdCorporateFare/>InCicle</p><p style={{marginLeft:'40px'}}><FaUniversity/>Uninorte</p>
                     </Ocupation>

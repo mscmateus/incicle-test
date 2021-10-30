@@ -4,7 +4,7 @@ export const Container = styled.div`
     margin: 10px;
     background-color: #fff;
     border-radius: 10px;
-    color: #585556ff;
+    color: #585556;
 `
 export const Identification = styled.div`
     text-align: center;
@@ -34,6 +34,7 @@ export const UserInfos = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     p{
+        color: #585556;
         display: flex;
         align-items: center;
     }

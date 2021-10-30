@@ -9,7 +9,6 @@ export default function TimeLine() {
         <Container>
             <NewPublication />
             <Publication />
-            <Publication />
         </Container>
     )
 }
