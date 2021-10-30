@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 import { FaUniversity } from "react-icons/fa";
 import { MdCorporateFare } from "react-icons/md";
 
-export default function Home() {
+export default function ProfileCard() {
     return (
         <Container>
             <BackGroundPicture src={'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'} />

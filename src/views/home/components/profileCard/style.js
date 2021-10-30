@@ -26,6 +26,9 @@ export const Identification = styled.div`
         color: #585556ff;
         text-decoration: unset;
     }
+    a:hover{
+        text-decoration: underline;
+    }
 `
 export const UserInfos = styled.div`
     margin-top: 10px;

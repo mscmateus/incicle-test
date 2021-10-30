@@ -1,12 +1,15 @@
 import React from 'react'
 import { Container, Card } from './style'
 
-export default function Home() {
+import Publication from './components/publication'
+import NewPublication from './components/newPublication'
+
+export default function TimeLine() {
     return (
         <Container>
-            <Card />
-            <Card />
-            <Card />
+            <NewPublication />
+            <Publication />
+            <Publication />
         </Container>
     )
 }

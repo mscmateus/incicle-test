@@ -11,5 +11,4 @@ export const CardsContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: #f45;
 `

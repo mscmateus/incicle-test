@@ -2,7 +2,7 @@ import {createGlobalStyle} from 'styled-components'
 
 export const App = createGlobalStyle`
     body{
-        background-color: #e6e6e6ff;
+        background-color: #f2f3f5ff;
         padding: 0;
         margin: 0;
         border: 0;
