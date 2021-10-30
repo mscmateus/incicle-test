@@ -15,10 +15,14 @@ import {
 
 import { AiOutlineLike, AiTwotoneLike } from 'react-icons/ai'
 import { FaRegCommentDots, FaRegShareSquare } from 'react-icons/fa'
+import { ImAlarm } from 'react-icons/im'
+import { GoGlobe } from 'react-icons/go'
+import { FaLock } from 'react-icons/fa'
 
-const iconsStyle={ fontSize: '14px', marginRight: '5px' }
+const ActionIconsStyle = { fontSize: '14px', marginRight: '5px' }
+const InfoIconsStyle = { marginRight: '3px' }
 
-export default function Publication({content=""}) {
+export default function Publication({ content = "", privateStatus = true, timeStatus = "" }) {
     const [liked, setLiked] = React.useState(false)
     return (
         <Container>
@@ -26,7 +30,10 @@ export default function Publication({content=""}) {
                 <AuthorPicture src={'https://randomuser.me/api/portraits/lego/3.jpg'} />
                 <AuthorInfo>
                     <h1><a href={''}>Patricia Santos</a></h1>
-                    <PubliInfo><h2 style={{ marginRight: '10px' }}>há cerca de 8 horas</h2><h2>Somente eu</h2></PubliInfo>
+                    <PubliInfo>
+                        <h2 style={{ marginRight: '10px' }}><ImAlarm style={InfoIconsStyle}/>{"  " + timeStatus}</h2>
+                        {privateStatus ? (<h2><FaLock style={InfoIconsStyle}/>{" Somente eu"}</h2>) : (<h2><GoGlobe style={InfoIconsStyle}/>{" Público"}</h2>)}
+                    </PubliInfo>
                 </AuthorInfo>
             </AuthorSection>
             <Content>
@@ -42,12 +49,12 @@ export default function Publication({content=""}) {
             <Buttons>
                 <Button onClick={() => setLiked(liked ? false : true)}>
                     {liked ?
-                        (<Active><AiTwotoneLike style={iconsStyle} />Curtir</Active>)
+                        (<Active><AiTwotoneLike style={ActionIconsStyle} />Curtir</Active>)
                         :
-                        (<><AiOutlineLike style={iconsStyle} />Curtir</>)}
+                        (<><AiOutlineLike style={ActionIconsStyle} />Curtir</>)}
                 </Button>
-                <Button><FaRegCommentDots style={iconsStyle}/>Comentários</Button>
-                <Button><FaRegShareSquare style={iconsStyle}/>Compartilhar</Button>
+                <Button><FaRegCommentDots style={ActionIconsStyle} />Comentários</Button>
+                <Button><FaRegShareSquare style={ActionIconsStyle} />Compartilhar</Button>
             </Buttons>
         </Container>
     )

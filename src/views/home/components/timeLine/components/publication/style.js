@@ -26,6 +26,8 @@ export const AuthorSection = styled.div`
         }
     }
     h2{
+        display: flex;
+        align-items: center;
         font-size: 10px;
         margin: 0px;
         padding: 0px;

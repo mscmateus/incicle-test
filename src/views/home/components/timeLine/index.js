@@ -10,9 +10,13 @@ export default function TimeLine() {
             <NewPublication />
             <Publication 
                 content='Essa publicação está configurada no modo privado "somente eu".'
+                privateStatus = {true}
+                timeStatus = "Há cerca de 8 horas"
             />
             <Publication 
                 content="ikikikiki"
+                privateStatus = {false}
+                timeStatus = "há 8 dias"
             />
         </Container>
     )
