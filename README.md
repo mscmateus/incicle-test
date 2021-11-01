@@ -1,4 +1,4 @@
-Este projeto consiste em um teste de front-end realizado para a empresa InCicle e consiste basicamente na construção de uma tela conforme o que foi planejado.
+Este repositório é em um teste de front-end realizado para a empresa InCicle e consiste basicamente na construção de uma tela conforme o que foi planejado, para tal, foi utilizado React e Styled Components para a construção e estilização dos componentes.
 
 ## Pré-requisitos
 
