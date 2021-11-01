@@ -20,7 +20,7 @@ export default function NewPublication() {
                 </TextAreaContainer>
             </Container>
             <ArticleSection>
-                <p>ou <a href={''}>public um artigo</a> na InCicle</p>
+                <p>ou <a href={''}>publique um artigo</a> na InCicle</p>
             </ArticleSection>
         </>
     )
